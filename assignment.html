@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>김예나</title>
+
+        <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-pen.css" rel="stylesheet">
+        <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+       
+    <style>
+
+     @font-face {
+          font-family: 'KoPubDotumMedium';
+           src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;}
+
+
+        .logo{left: 1450px;width: 200px;height: 100px;position: fixed;margin-top: 0px; border-radius: 10px; z-index: 2;}
+          
+        .profile{position: fixed; height: 900px; background-color: whitesmoke; width: 300px;}
+
+        .img{width: 200px; height: 200px; border-radius: 200px; border:20px solid mistyrose; margin-bottom: 5px;margin-left: 30px;}
+        
+        .content{width: 240px; text-align: center; font-size:large; font-family: 'NanumBarunPen'; font-weight:bolder;margin-left: 30px;}
+    
+        .menu{ width:5px; background-color:mistyrose; position:absolute; top:420px; bottom:130px; left:50%;} 
+       
+        .graph{margin-left: 40px; width: 400px; height: 20px; background-color:lightgray; border-radius: 30px;}
+
+        .graph span {display: block; padding: 0 10px; height: 20px; line-height: 20px; text-align: right; border-radius: 20px; box-sizing: border-box;color: whitesmoke;}
+
+        .graph.stack1 span {background:#f6a29a; animation: stack 2s 1;}
+        .graph.stack2 span {background:#f6a29a; animation: stack1 2s 1;}
+        .graph.stack3 span {background:#f6a29a; animation: stack2 2s 1;}
+        .graph.stack4 span {background:#f6a29a; animation: stack3 2s 1;}
+        
+        @keyframes stack{
+        
+          0% {width: 0; color: rgba(255,255,255,1);}
+          40% {color: rgba(255,255,255,1);}
+          100% {width: 75%;}
+        }
+        @keyframes stack1{
+          0% {width: 0; color: rgba(255,255,255,1);}
+        40% {color: rgba(255,255,255,1);}
+          100% {width: 40%;}
+        }
+
+        @keyframes stack2{
+          0% {width: 0; color: rgba(255,255,255,1);}
+          40% {color: rgba(255,255,255,1);}
+          100% {width: 65%;}
+        }
+
+        @keyframes stack3{
+          0% {width: 0; color: rgba(255,255,255,1);}
+          40% {color: rgba(255,255,255,1);}
+          100% {width: 60%;}
+        }
+
+        .i{transition: all ease 1s;}
+
+        .i:hover{transform: rotate( 45deg );}
+
+        .wrapper{position: relative;}
+
+        .wrapper .button{height: 30px; width: 30px; margin: 75px;overflow: hidden; background: #f6a29a; border-radius: 50px; cursor: pointer;box-shadow: 0px 10px 10px rgba(0,0,0,0.1); transition: all 0.3s ease-out; margin-left: 137px;}
+
+        .wrapper .button:hover{ height: 150px; border: #f6a29a, 10px;}
+
+        .wrapper .button:hover:nth-child(1){background: whitesmoke;}
+
+        .wrapper .button:hover:nth-child(2){background: mistyrose;}
+
+        .wrapper .button:hover:nth-child(3){background: #f6a29a;}
+
+        .wrapper .button .icon{ display: inline-block; height: 30px; width: 30px; text-align: center; border-radius: 30px; box-sizing: border-box; line-height: 30px;}
+
+        .wrapper .button .span{font-family: 'NanumBarunPen'; color: inherit; font-size: 18px; text-align: center; list-style-type: none; writing-mode: vertical-rl;margin-bottom: 10px;text-decoration: none; font-weight: bold;}
+
+        .article{width: 1060px; left: 450px; position: absolute;top: 150px;}
+
+        .title{font-size: x-large; border-radius: 50px; font-family: 'NanumSquare'; font-weight:bold; background-color: mistyrose; padding-left: 20px; margin-top: 10px; color: indianred;}
+        
+        .article-left{width:480px; margin-right: 10px; float:left; }
+        
+        .article-right{width:480px; float:right;}
+        
+        .inside-left{width: 145px; float: left;}
+
+        .inside-right{width: 335px; float: left;}
+     
+        .text{ font-size: large; font-family:'KoPubDotumMedium'; font-weight:lighter; padding-left: 20px; }
+      
+        .circle{width: 15px; height: 15px; border-radius: 25px; background-color: indianred; margin-left: 25px; float: left; margin-bottom: 10px;}
+
+        .empty-circle{width: 10px; height: 10px; border-radius: 20px; border: 3px solid indianred; float: left; margin-bottom: 10px; margin-left: 25px;}
+
+        .rectangle{width: 1200px; height: 700px;background-color: mistyrose;text-align: center; margin-top:70px;margin-bottom: 100px; overflow: hidden; border-radius: 30px;}
+       
+        .project{left: 380px; width: 1300px; position: absolute; top: 1000px;}
+        
+        .inside-title{width: 700px;margin-left: 250px; margin-top: 20px; font-size:xx-large; border-radius: 50px; font-family: 'NanumSquare'; font-weight:bold; background-color: whitesmoke; text-align: center; color: indianred;}
+        
+        .p-text{ font-size: x-large; font-family:'NanumBarunPen'; font-weight:lighter; padding-left: 20px;}
+
+        .p-rigth{width: 600px;height: 600px; float: left;background-color: whitesmoke;margin-top: 20px;border-radius: 30px;margin-left: 25px;}
+
+        .p-left{width: 550px;float: left;}
+
+        .p-img{float: left;}
+ 
+        .web{left: 380px; width: 1300px; position: absolute; top: 3800px;}
+
+        .w-btn-outline { position: relative; padding: 15px 100px; border-radius: 15px; font-family: 'KoPubDotumMedium', sans-serif; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); text-decoration: none; font-weight: 600;transition: 0.25s;}
+
+        .w-btn-pink-outline { border: 3px solid #f6a29a;   color: #6e6e6e;}
+
+        .w-btn-pink-outline:hover {  background-color: #f6a29a;  color: whitesmoke;}
+
+        .w-btn-outline:hover  {letter-spacing: 2px;   transform: scale(1.2);  cursor: pointer;}
+
+       
+</style>
+</head>
+<body>
+    <header id ="main profile">
+      
+      <div class="profile">
+        
+        <img class="img" src="프로필.jpg" alt="프로필사진">
+        <h1 class="content">KIM YENA | 김예나 <hr>GAME PROGRAMMER<br>GAME DESIGNER</h1>
+        <a href="https://www.instagram.com/yenana_ohhnana/">  <img class="i" src="insta.png" alt="인스타" style="margin-left: 120px;"></a>
+        <a href="https://github.com/kimyena243"><img class="i" src="git.png" alt="깃허브"></a>
+        <div class="menu"></div>   
+        <div class="wrapper">
+         
+          <div class="button"><div class="icon"></div><a class="span" href="#profile">Profile</a></div>
+          <div class="button"><div class="icon"></div><a class ="span" href="#project">Project</a></div>
+          <div class="button"><div class="icon"></div><a class ="span" href="#application">Application</a></div>
+        </div>
+      </div>     
+    </header>
+    
+<a href="assignment.html"><img class="logo" src="logo.png"></a>
+    <div class="article">
+      
+        <article>  
+          <div class="article-left">
+              <p class="title" id ="profile">Profile</p>
+
+              <p class="text" >Birth : 2002.02.15</p>
+              <p class="text"> E-Mail : dpsksla243@naver.com</p>
+              <p class="text" > Phone Number : 010.9388.0574</p>
+          </div>
+        </article>
+        <article> 
+            <div class="article-right">
+            <p class="title">Projects</h4> 
+            <p class="text"> 팀 '우주 허수아비단' 'U-Fam'</p>
+            <p class="text">팀 '당근마켓' 'Crazy Loving Snowman'</p>
+            <p class="text"> 팀 '새콤달콤' 'Re-Eco'</p>
+            <p class="text"> 개인 All Carrots Are Mine!</p>
+            </div>
+        </article>
+        <article>
+          <div class="article-left" style="margin-top: 70px">
+            <p class="title">Education</p>
+            <p class="text">2021.02 이리남성여자고등학교 졸업</p>
+            <p class="text">2021.03 홍익대학교 게임소프트웨어학과 입학</p>
+          </div>
+        </article>    
+        
+        <article>
+          <div class="article-right">
+            <p class="title" id="a">Skills</p> 
+            <div><p class="text">C/C++/C#<br><div class="graph stack1"><span style="width: 75%;">75%</span> </div></p>
+            <p class="text">Python<br><div class="graph stack2"><span style="width: 40%;">40%</span> </div></p>
+            <p class="text">HTML5/CSS3<br><div class="graph stack3"><span style="width: 65%;">65%</span> </div></p>
+            <p class="text">UnityEngine<br><div class="graph stack4"><span style="width: 60%;">60%</span> </div></p>
+             
+          </div>
+       </article>
+     
+       <article> 
+          <div class="article-left"style="margin-top: 70px">
+          <p class="title">Awards</p> 
+          <p class="text">2021 게임학부 G-Festival 기획 부문 최우수상<br></p>
+          </div>
+       </article>
+    </div>
+    
+
+
+  <div class="project" id ="project">
+    <article>
+      <div class="rectangle"><div class="inside-title">Project : All Carrots Are Mine!</div>
+       <div class="p-left">
+        <img src="acam1.png" style="margin-top: 20px; width: 500px; height: 500px; border-radius: 30px; margin-left: 25px;">
+        <div class="p-img">
+        <img src="당근.png" style="width: 100px; height:100px; border-radius: 30px; margin-left: 130px;"> 
+        <img src="당근다발.png" style="width: 100px; height:100px; border-radius: 30px;"> 
+        <img src="황금당근.png" style="width: 100px; height:100px; border-radius: 30px;"> 
+      </div>
+      </div>
+       <div class="p-rigth">
+        <p class="p-text">게임 이름 : 당근다내꾸!</p>
+        <p class="p-text">기간 : 2021.09.01 ~ 2021.12.21</p>
+        <p class="p-text">기술스택 : 파이썬</p>
+        <p class="p-text">기여내용 : 게임 기획 및 모든 코드 구현 </p><br><br><br><br><br><br><br>
+        <p class="p-text" style="color:indianred; font-weight: bold;"> " 파이썬 모듈 파이게임으로 제작한 1인 개발 게임.<br> 장애물을 피해 하늘에서 떨어지는 당근을 모아야 한다. "</p>
+       
+        <p class="p-text" style="text-align: right;"><a href ="All carrots are mine !.pdf"><img class="i" src="pdf.png" alt="기획서"></a></p>
+ 
+       </div>
+      </div>
+      
+      <div class="rectangle"><div class="inside-title">Project : Crazy Loving Snowman</div>
+      <div class="p-left">
+        <img src="cls2.png" style="margin-top: 20px; width: 500px; border-radius: 30px; margin-left: 25px; ">
+        <img src="cls1.png" style="margin-top: 20px; width: 500px; border-radius: 30px; margin-left: 25px;">
+      <div class="p-img">
+          <img src ="cls3.png" style=" width: 100px; height: 100px; border-radius: 15px; margin-left: 40px; margin-top: 20px;">
+          <img src ="cls4.png" style="width: 100px; height: 100px; border-radius: 15px; margin-left: 25px; margin-top: 20px;">
+          <img src ="cls5.png" style="width: 100px; height: 100px; border-radius: 15px; margin-left: 25px; margin-top: 20px;">
+          <img src ="cls6.png" style="width: 100px; height: 100px; border-radius: 15px; margin-left: 25px; margin-top: 20px;">
+
+      </div>
+
+      </div>
+      
+     <div class="p-rigth">
+      <p class="p-text">게임 이름 : 크레이지 러빙 스노우맨</p>
+      <p class="p-text">기간 : 2021.09.01 ~ 2022.02.28</p>
+      <p class="p-text">기술스택 : C#(유니티 엔진)</p>
+      <p class="p-text">기여내용 : 게임 기획, 스테이지 레벨 디자인 및 전체 UI 연결, <Br>플레이어 및 스테이지 저장 시스템, 게인 씬 이동 코드 구현</p><br><br><br><br>
+      <p class="p-text" style="color:indianred; font-weight: bold;">" 유니티 엔진으로 제작된 모바일 2D 퍼즐 어드벤처 게임.<br>눈사람을 조종하여 각종 함정을 피해 눈,코,입을 모아<br>목적지에 도달해야 한다. "
+         </p>
+  
+      <p class="p-text" style="text-align: right;"><a href ="crazy loving snowman.PDF"><img class="i" src="pdf.png" alt="기획서"></a></p>
+    </div>
+    </div>
+
+
+     <div class="rectangle"><div class="inside-title">Project : Please deliver the wedding cake!</div>
+     <div class="p-left">
+     <video style="margin-top: 20px; height: 285px; width: 500px; margin-left:50px;border-radius: 30px;" controls>
+     <source src="mod.mp4" type="video/mp4"></video>
+     <img src="mod1.png" style="margin-top: 20px; height: 285px; width: 500px; margin-left:50px;border-radius: 30px;">
+     </div>
+     <div class="p-rigth">
+      <p class="p-text">게임 이름 : 웨딩 케이크를 배달해줘!</p>
+      <p class="p-text">기간 : 2022.03.02 ~ 2022.06.25</p>
+      <p class="p-text">기술스택 : 루아 스크립트 (넥슨 Project Mod)</p>
+      <p class="p-text">기여내용 : 게임 기획 및 모든 스크립트 구현</p><br><br><br><br><br><br><br>
+      <p class="p-text" style="color:indianred; font-weight: bold;">" 플레이어 몬스터의 스탯을 높여 필드 내 몬스터를 처치하면서 <Br>무사히 케이크를 전달해야 한다. "</p>
+      
+      <p class="p-text" style="text-align: right;"><a href ="웨딩 케이크를 배달해줘!.pdf"><img class="i" src="pdf.png" alt="기획서"></a></p>
+
+
+     </div>
+    </div>
+    
+    </article>
+  </div>
+
+    
+<div class="web" id="application">
+<article>
+<div class="rectangle" style="background-color: #f6a29a;"><div class="inside-title">Web Application : Whack-A-Mole</div>
+<div class="p-left">
+<img src="ddj.png" style="margin-top: 20px; height: 285px; width: 500px; margin-left:50px;border-radius: 30px;">
+<img src="ddj1.png" style="margin-top: 20px; height: 285px;width: 500px; margin-left:50px;border-radius: 30px;">
+</div>
+<div class="p-rigth">
+  <br><Br><br><br><br><br>
+ <p class="p-text">게임 이름 : 더지더지두더지</p>
+ <p class="p-text">자바스크립트로 게임을 만들어 보고 싶어서 <br>간단하게 구현한 두더지 잡기 게임.</p>
+ <p class="p-text">스타트 버튼을 누르고 시작하며 제한시간 내에 <br>두더지를 8마리 이상 잡지 못하면 게임오버이다.</p>
+
+ <p class="p-text" > <a href="game.html"><button class="w-btn-outline w-btn-pink-outline" type="button">
+ START!
+</button></a></p>
+
+</div>
+</div>
+
+
+</article>
+
+
+</div>
+    
+     
+       
+​ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+
+
+  $(document).ready(function(){
+  
+    $("a").on('click', function(event) {
+  
+      if (this.hash !== "") {
+  
+        event.preventDefault();
+  
+        var hash = this.hash;
+  
+        $('html, body').animate({
+  
+          scrollTop: $(hash).offset().top
+  
+        }, 800, function(){
+  
+          window.location.hash = hash;
+  
+        });
+  
+      } 
+  
+    });
+  
+  });
+  
+   
+  
+  </script>
+
+</body>
+</html>
